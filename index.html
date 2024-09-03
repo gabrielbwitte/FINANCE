@@ -1,24 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Finance</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Finace</title>
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
-    <aside>
-        <header>
-            <img src="./src/img/Perfil.jpg" alt="Foto do usuario">
-        </header>
-        <nav>
-            <button>
-                <span>
-                    <span>Home</span>
-                </span>
+    <nav id="sidebar">
+        <div id="siderbar-content">
+            <div id="user">
+                <img src="./src/img/Perfil.jpg" id="user-perfil">
+                <p id="user-infos">
+                    <span class="item-description">Gabriel</span>
+                    <span class="item-description">Witte</span>
+                </p>
+            </div>
+    
+            <ul id="side-items">
+                <li class="side-item active">
+                    <a href="#">
+                        <img src="./src/icons/chart-line-solid.svg">
+                        Dashboard
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <img src="./src/icons/user-solid.svg">
+                        Usuarios
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <img src="./src/icons/box-solid.svg">
+                        Produtos
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <img src="./src/icons/image-solid.svg">
+                        Imagens
+                    </a>
+                </li>
+                <li class="side-item">
+                    <a href="#">
+                        <img src="./src/icons/gear-solid.svg">
+                        Configurações
+                    </a>
+                </li>
+            </ul>
+            <button id="open-btn">
+                <img id="open-btn-icon" src="./src/icons/chevron-right-solid.svg" alt="">
             </button>
-        </nav>
-    </aside>
+        </div>
+        <div id="logout">
+             <button id="logout-btn">
+                <img src="./src/icons/arrow-right-from-bracket-solid.svg">
+                <span>
+                    Logout
+                </span>
+             </button>
+        </div>
+    </nav>
+    <main>
+        <h1>Sistem</h1>
+    </main>
+    <script src="./src/javascript/script.js"></script>
 </body>
 </html>
