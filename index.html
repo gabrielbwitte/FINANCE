@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,64 +7,49 @@
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
-    <nav id="sidebar">
-        <div id="siderbar-content">
-            <div id="user">
-                <img src="./src/img/Perfil.jpg" id="user-perfil">
-                <p id="user-infos">
-                    <span class="item-description">Gabriel</span>
-                    <span class="item-description">Witte</span>
-                </p>
-            </div>
-    
-            <ul id="side-items">
-                <li class="side-item active">
-                    <a href="#">
-                        <img src="./src/icons/chart-line-solid.svg">
-                        Dashboard
-                    </a>
-                </li>
-                <li class="side-item">
-                    <a href="#">
-                        <img src="./src/icons/user-solid.svg">
-                        Usuarios
-                    </a>
-                </li>
-                <li class="side-item">
-                    <a href="#">
-                        <img src="./src/icons/box-solid.svg">
-                        Produtos
-                    </a>
-                </li>
-                <li class="side-item">
-                    <a href="#">
-                        <img src="./src/icons/image-solid.svg">
-                        Imagens
-                    </a>
-                </li>
-                <li class="side-item">
-                    <a href="#">
-                        <img src="./src/icons/gear-solid.svg">
-                        Configurações
-                    </a>
-                </li>
-            </ul>
-            <button id="open-btn">
-                <img id="open-btn-icon" src="./src/icons/chevron-right-solid.svg" alt="">
+    <div class="sidebar">
+        <div class="sidebar-title">
+            <img src="./src/icons/comment-dollar-solid.svg">
+            <h1>Finace</h1>
+        </div>
+        <div class="sidebar-div">
+            <button id="novo-bnt">
+                <span>
+                    <img src="./src/icons/plus-solid.svg">
+                </span>
+                Novo
             </button>
         </div>
-        <div id="logout">
-             <button id="logout-btn">
-                <img src="./src/icons/arrow-right-from-bracket-solid.svg">
+        <div class="sidebar-div">
+            <button id="dashboard-btn">
                 <span>
-                    Logout
+                    <img src="./src/icons/chart-line-solid.svg">
                 </span>
-             </button>
+                Dashboard
+            </button>
         </div>
-    </nav>
-    <main>
-        <h1>Sistem</h1>
-    </main>
+        <div class="sidebar-div">
+            <button id="transações-btn">
+                <img src="./src/icons/hand-holding-dollar-solid.svg">
+                Transações
+            </button>
+        </div>
+        <div class="sidebar-div">
+            <button id="planejamento-btn">
+                <img src="./src/icons/pen-to-square-solid.svg">
+                Planejamento
+            </button>
+        </div>
+        <div class="sidebar-div">
+            <button id="configuracao-bnt">
+                <img src="./src/icons/gear-solid.svg">
+                Configurações
+            </button>
+        </div>
+    </div>
+    <div>
+        <iframe id="iframe" src="./object/novo.html" frameborder="0"></iframe>
+    </div>
     <script src="./src/javascript/script.js"></script>
 </body>
 </html>
